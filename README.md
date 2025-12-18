@@ -29,6 +29,8 @@
 
 ## 🧩 Contributions
 
+<!-- PR_TRACKER_START -->
+
 ### Laravel MRs
 | # | PR | Status |
 |---|----|--------|
@@ -50,6 +52,8 @@
 | 1 | laravel-sms-gateway | [ ] |
 | 2 | laravel-payment-gateway | [ ] |
 | 3 | laravel-auth-extension | [ ] |
+
+<!-- PR_TRACKER_END -->
 
 ---
 

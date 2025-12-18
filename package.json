@@ -1,0 +1,11 @@
+{
+  "name": "github-profile-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/fetch-and-insert-prs.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}
