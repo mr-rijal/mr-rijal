@@ -2,7 +2,7 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every day at UTC 00:00
+    - cron: '0 * * * *' # Runs every hour
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Update README
         uses: leosun-action/github-readme-stats-update@v1
         with:
-          repo: prashantrijal/prashantrijal
+          repo: mr-rijal/mr-rijal
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and Push

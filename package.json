@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node scripts/fetch-and-insert-prs.js"
+    "start": "npm run update:all",
+    "update:prs": "node scripts/fetch-and-insert-prs.js",
+    "update:quarterly": "node scripts/update-quarterly-stats.js",
+    "update:commits": "node scripts/update-commit-log.js",
+    "update:all": "npm run update:prs && npm run update:quarterly && npm run update:commits",
+    "status": "node scripts/summary-report.js"
   },
-  "dependencies": {
-    "node-fetch": "^3.3.1"
-  }
+  "dependencies": {}
 }

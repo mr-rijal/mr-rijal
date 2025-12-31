@@ -1,4 +1,4 @@
-name: Update PR Section
+name: Update Profile Stats
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-prs:
+  update-profile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch PRs and update README
-        run: node scripts/fetch-and-insert-prs.js
+      - name: Update README with PRs and Stats
+        run: npm run update:all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
