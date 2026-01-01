@@ -144,12 +144,17 @@ A chronological list showing your daily commit count throughout 2026.
 - **Updates:**
   - PR tracking (Laravel/Tabler)
   - Quarterly progress table
+  - Daily commit log
 - **Trigger:** Automatic + Manual via Actions tab
 
 #### 2. **Update GitHub Stats** (`update-readme.yml`)
 - **Runs:** Hourly
-- **Updates:** GitHub statistics
-- **Trigger:** Automatic
+- **Updates:**
+  - Commit count badges in Real-time Stats section
+  - Repository statistics
+- **Trigger:** Automatic + Manual via Actions tab
+
+**Note:** GitHub stats cards (Activity Graph, Streak Stats, Stats Cards, Top Languages) update automatically via external services (github-readme-stats.vercel.app, etc.). The workflow updates the badge counters in the README.
 
 ---
 

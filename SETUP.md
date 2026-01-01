@@ -55,8 +55,10 @@ The project includes several npm scripts:
 
 The workflows are configured to run automatically:
 
-- `update-profile.yml` - Updates PR tracking and quarterly stats daily at UTC 00:00
-- `update-readme.yml` - Updates GitHub stats hourly
+- `update-prs.yml` (Update Profile Stats) - Updates PR tracking, quarterly stats, and commit log daily at UTC 00:00
+- `update-readme.yml` (Update GitHub Stats) - Updates stats badges hourly
+
+**Note:** GitHub stats cards (Activity Graph, Streak Stats, Stats Cards, Top Languages) update automatically via external services. The workflow updates badge counters in the README.
 
 ## Features
 
